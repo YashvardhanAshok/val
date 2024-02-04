@@ -1,23 +1,58 @@
-*{margin: 0;padding: 0;background-color: #000;}
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+body{margin: 0;padding: 0;background-color: #000;}
 :root{
     --MidBackgroundColor:radial-gradient(circle, #000, #ff5e00, #000);
-   
+
     --BackgroundColor1:radial-gradient(circle, #ff5e00, #ffbb00);
     --BackgroundColor2:radial-gradient(circle, #ff5e00, #ffbb00);
     --BackgroundColor3:radial-gradient(circle, #ff5e00, #ffbb00);
 }
 
+.T{
+    position: absolute; 
+    transform: translate(0,-50%); 
+    top: 50%;
+    width: 100vw;
+    text-align: center;
+    z-index: 2;
+    font-family: "Protest Riot", sans-serif;
+    font-weight: bold;
+    line-height: 1;
+    color: white;
+}
+
+.text1{font-size:80px;}
+
+.text2{font-size:47px;}
+
+.text3{font-size:47px;}
+
+.text4{font-size:47px;}
+
+
+.fowerCover{position: absolute;transform: translate(-50%,-50%);left: 50%;top: 50%;}
+
 .flower {
     position: relative;
     margin: auto;
-
+    
 
     height: 200px;
     width: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 0;
+    animation: anima 2.5s;
 }
+
+
+@keyframes anima {
+    0%{opacity: 0;}
+    30%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
 
 .mid {
     width: 50px;
@@ -28,7 +63,6 @@
     background-size: 5px 5px;
     filter: drop-shadow(0 0 8px #682600);
     z-index: 4;
-
 }
 
 .Petal1 {
@@ -41,11 +75,8 @@
     border-radius: 50%;
 
     background: var(--BackgroundColor1);
-
     filter: drop-shadow(0 0 5px #e05200);
 }
-
-
 
 .Petal2 {
     position: absolute;
@@ -71,16 +102,11 @@
     filter: drop-shadow(0 0 2px #fbd702);
 }
 
-.Petal1.p1 {transform: rotate(22.5deg);}
-.Petal1.p2 {transform: rotate(67.5deg);}
-.Petal1.p3 {transform: rotate(110.5deg);}
-.Petal1.p4 {transform: rotate(157.5deg);}
+.Petal3.p1,.Petal1.p1 {transform: rotate(22.5deg);}
+.Petal3.p2,.Petal1.p2 {transform: rotate(67.5deg);}
+.Petal3.p3,.Petal1.p3 {transform: rotate(110.5deg);}
+.Petal3.p4,.Petal1.p4 {transform: rotate(157.5deg);}
 
 .Petal2.p2 {transform: rotate(90deg);}
 .Petal2.p3 {transform: rotate(45deg);}
 .Petal2.p4 {transform: rotate(135deg);}
-
-.Petal3.p1 {transform: rotate(22.5deg);}
-.Petal3.p2 {transform: rotate(67.5deg);}
-.Petal3.p3 {transform: rotate(110.5deg);}
-.Petal3.p4 {transform: rotate(157.5deg);}
