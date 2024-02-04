@@ -1,23 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
-body{margin: 0;padding: 0;background-color: #000;}
 :root{
     --MidBackgroundColor:radial-gradient(circle, #000, #ff5e00, #000);
+    /* --MidBackgroundColor:radial-gradient(circle, #0000003e, #720455, #00000058); */
+    /* --MidBackgroundColor:radial-gradient(circle, #0000008c, #92091f, #0000008c); */
+    /**/
 
-    --BackgroundColor1:radial-gradient(circle, #ff5e00, #ffbb00);
-    --BackgroundColor2:radial-gradient(circle, #ff5e00, #ffbb00);
-    --BackgroundColor3:radial-gradient(circle, #ff5e00, #ffbb00);
+    --BackgroundColor1:radial-gradient(circle,#3C0753, #ff5e00, #ffbb00  );
+    /* --BackgroundColor1:radial-gradient(circle,#3C0753,#720455,#910A67 ); */
+    /* --BackgroundColor1:radial-gradient(circle,#3C0753,#ff07bd,#910A67 ); */
+    /* --BackgroundColor1:radial-gradient(circle,#070753,#910a15,#ff07bd ); */
+    
+    --sad0: drop-shadow(0 0 8px #682600);
+    --sad1:drop-shadow(0 0 5px #35142c);
+    --sad2: drop-shadow(0 0 2px #35142c);
+
+    /* --sad0: drop-shadow(0 0 8px #680055a9); */
+    /* --sad1:drop-shadow(0 0 5px #e05200); */
+    /* --sad2: drop-shadow(0 0 2px #910A67); */
+
 }
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    /* background-color: #04212c; */
+    /* background-color: #02161e; */
+    background-color: #1c0a0d;
+
+    font-family: "Protest Riot", sans-serif;
+    font-weight: bold;
+    line-height: 1;
+    text-align: center;
+}
+
+/* TEXT1 *//* TEXT1 *//* TEXT1 *//* TEXT1 *//* TEXT1 *//* TEXT1 */
+/* TEXT1 *//* TEXT1 *//* TEXT1 *//* TEXT1 *//* TEXT1 *//* TEXT1 */
 
 .T{
     position: absolute; 
     transform: translate(-50%,-50%);left:50%;
     top: 50%;
     width: 100vw;
-    text-align: center;
     z-index: 2;
-    font-family: "Protest Riot", sans-serif;
-    font-weight: bold;
-    line-height: 1;
     color: white;
 }
 
@@ -35,23 +61,50 @@ body{margin: 0;padding: 0;background-color: #000;}
 
 .text7{font-size:35px;}
 
-/* TEXT2 */
-.T2{
-    position: absolute; 
-    transform: translate(-50%,-50%);left:50%;
-    top: 5%;
-    width: 90vw;
-    text-align: LEFT;
-    z-index: 2;
-    font-family: "Protest Riot", sans-serif;
-    font-weight: bold;
-    line-height: 1;
-    color: white;
-    font-size:40px;
+/* TEXT2 *//* TEXT2 *//* TEXT2 *//* TEXT2 *//* TEXT2 *//* TEXT2 */
+/* TEXT2 *//* TEXT2 *//* TEXT2 *//* TEXT2 *//* TEXT2 *//* TEXT2 */
+.IMG{
+    position: absolute;
+    left: -64vw;
+    bottom: -90px;
+
+    height: 100vw;
+    width: 220vw;
+    background-image: url("image-removebg-preview.png");
+    background-size: 100% 100%;
+    opacity: 0.7;
 }
 
+.contanerforoption{
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.T2{
+    padding-left: 25px;
+    padding-top: 25px;
+    text-align: LEFT;
+    color: white;
+    font-size:40px;
+    order:1;
+}
+
+.yes,.no{
+    width: 110px;
+    margin-top: 10px;
+    margin-left: 40px;
+    padding: 5px;
+    background-color: white;
+    border-radius: 5px;
+    font-size:40px;
+    order:2;
+}
+
+.no{margin-left: 20px;}
 
 
+/* flower *//* flower *//* flower *//* flower *//* flower *//* flower */
+/* flower *//* flower *//* flower *//* flower *//* flower *//* flower */
 .fowerCover{position: absolute;transform: translate(-50%,-50%);left: 50%;top: 50%;}
 
 .flower {
@@ -83,7 +136,7 @@ body{margin: 0;padding: 0;background-color: #000;}
 
     background: var(--MidBackgroundColor);
     background-size: 5px 5px;
-    filter: drop-shadow(0 0 8px #682600);
+    filter: var(--sad0);
     z-index: 4;
 }
 
@@ -97,7 +150,7 @@ body{margin: 0;padding: 0;background-color: #000;}
     border-radius: 50%;
 
     background: var(--BackgroundColor1);
-    filter: drop-shadow(0 0 5px #e05200);
+    filter: var(--sad1);
 }
 
 .Petal2 {
@@ -107,8 +160,8 @@ body{margin: 0;padding: 0;background-color: #000;}
     height: 40px;
     border-radius: 50%;
 
-    background: var(--BackgroundColor2);
-    filter: drop-shadow(0 0 5px #e05200);
+    background: var(--BackgroundColor1);
+    filter: var(--sad1);
     z-index: 2;
 }
 
@@ -120,8 +173,9 @@ body{margin: 0;padding: 0;background-color: #000;}
     height: 40px;
     border-radius: 50%;
 
-    background: var(--BackgroundColor3);
-    filter: drop-shadow(0 0 2px #fbd702);
+    background: var(--BackgroundColor1);
+    filter: var(--sad2);
+
 }
 
 .Petal3.p1,.Petal1.p1 {transform: rotate(22.5deg);}
