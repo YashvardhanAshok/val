@@ -10,7 +10,7 @@ body{margin: 0;padding: 0;background-color: #000;}
 
 .T{
     position: absolute; 
-    transform: translate(0,-50%); 
+    transform: translate(-50%,-50%);left:50%;
     top: 50%;
     width: 100vw;
     text-align: center;
@@ -25,9 +25,31 @@ body{margin: 0;padding: 0;background-color: #000;}
 
 .text2{font-size:47px;}
 
-.text3{font-size:47px;}
+.text3{font-size:40px;}
 
-.text4{font-size:47px;}
+.text4{font-size:40px;}
+
+.text5{font-size:47px;}
+
+.text6{width:90vw;font-size:35px;}
+
+.text7{font-size:35px;}
+
+/* TEXT2 */
+.T2{
+    position: absolute; 
+    transform: translate(-50%,-50%);left:50%;
+    top: 5%;
+    width: 90vw;
+    text-align: LEFT;
+    z-index: 2;
+    font-family: "Protest Riot", sans-serif;
+    font-weight: bold;
+    line-height: 1;
+    color: white;
+    font-size:40px;
+}
+
 
 
 .fowerCover{position: absolute;transform: translate(-50%,-50%);left: 50%;top: 50%;}
