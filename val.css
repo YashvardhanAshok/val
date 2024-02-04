@@ -92,10 +92,9 @@ body{
 .txt-rotate{
     text-shadow: rgba(255, 255, 255, 0) 0px 0px 4px;
 
-    border-right: 4px solid white;
+    border-right: 4px solid transparent;
     animation: txt-rotate-line 1s linear infinite;
   }
-  @keyframes txt-rotate-line {50%{border-right: 4px solid transparent;}}
 
 
 /* TEXT2 *//* TEXT2 *//* TEXT2 *//* TEXT2 *//* TEXT2 *//* TEXT2 */
