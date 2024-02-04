@@ -11,23 +11,22 @@
     /* --BackgroundColor1:radial-gradient(circle,#070753,#910a15,#ff07bd ); */
     
     --sad0: drop-shadow(0 0 8px #682600);
-    --sad1:drop-shadow(0 0 5px #35142c);
+    --sad1:drop-shadow(0 0 5px #35142c9e);
     --sad2: drop-shadow(0 0 2px #35142c);
 
     /* --sad0: drop-shadow(0 0 8px #680055a9); */
     /* --sad1:drop-shadow(0 0 5px #e05200); */
     /* --sad2: drop-shadow(0 0 2px #910A67); */
-
 }
+
+
 
 body{
     margin: 0;
     padding: 0;
     height: 100vh;
     overflow: hidden;
-    /* background-color: #04212c; */
-    /* background-color: #02161e; */
-    background-color: #1c0a0d;
+    background-color: #18080b;
 
     font-family: "Protest Riot", sans-serif;
     font-weight: bold;
@@ -37,19 +36,48 @@ body{
 
 /* TEXT1 *//* TEXT1 *//* TEXT1 *//* TEXT1 *//* TEXT1 *//* TEXT1 */
 /* TEXT1 *//* TEXT1 *//* TEXT1 *//* TEXT1 *//* TEXT1 *//* TEXT1 */
-
-.T{
+.mainTixt1{
     position: absolute; 
     transform: translate(-50%,-50%);left:50%;
     top: 50%;
-    width: 100vw;
-    z-index: 2;
-    color: white;
+    max-height: 300px;
+    z-index: 1;
+    overflow: hidden;
 }
 
-.text1{font-size:80px;}
+.calsstextconaner{
+    transition: 1.5s ease-in-out;
+}
 
-.text2{font-size:47px;}
+.T{
+    position: relative;
+    height: 300px;
+
+       
+    color: rgb(255, 255, 255);
+    animation: textShadow 3s infinite;
+    width: 100%;
+    transition: 1s ease-in-out;
+}
+
+
+
+
+.cetertext{
+    position: absolute; 
+    transform: translate(-50%,-50%);left:50%;
+    top: 50%;
+    width: 100%;
+}
+
+@keyframes textShadow {
+ 0%{text-shadow: rgba(255, 255, 255, 0.244) 0px 0px 4px;}
+ 50%{text-shadow: rgba(255, 255, 255, 0) 0px 0px 4px;}
+ 100%{text-shadow: rgba(255, 255, 255, 0.244) 0px 0px 4px;}   
+}
+.text1{font-size:47px;}
+
+.text2{font-size:80px;}
 
 .text3{font-size:40px;}
 
@@ -60,6 +88,15 @@ body{
 .text6{width:90vw;font-size:35px;}
 
 .text7{font-size:35px;}
+
+.txt-rotate{
+    text-shadow: rgba(255, 255, 255, 0) 0px 0px 4px;
+
+    border-right: 4px solid white;
+    animation: txt-rotate-line 1s linear infinite;
+  }
+  @keyframes txt-rotate-line {50%{border-right: 4px solid transparent;}}
+
 
 /* TEXT2 *//* TEXT2 *//* TEXT2 *//* TEXT2 *//* TEXT2 *//* TEXT2 */
 /* TEXT2 *//* TEXT2 *//* TEXT2 *//* TEXT2 *//* TEXT2 *//* TEXT2 */
@@ -118,7 +155,8 @@ body{
     align-items: center;
     justify-content: center;
     z-index: 0;
-    animation: anima 2.5s;
+    animation: anima 2.5s ;
+    transform: scale(1.5);
 }
 
 
@@ -127,7 +165,6 @@ body{
     30%{opacity: 0;}
     100%{opacity: 1;}
 }
-
 
 .mid {
     width: 50px;
@@ -165,6 +202,8 @@ body{
     z-index: 2;
 }
 
+
+
 .Petal3 {
     position: absolute;
     left: 0px;
@@ -178,11 +217,41 @@ body{
 
 }
 
-.Petal3.p1,.Petal1.p1 {transform: rotate(22.5deg);}
-.Petal3.p2,.Petal1.p2 {transform: rotate(67.5deg);}
-.Petal3.p3,.Petal1.p3 {transform: rotate(110.5deg);}
-.Petal3.p4,.Petal1.p4 {transform: rotate(157.5deg);}
 
-.Petal2.p2 {transform: rotate(90deg);}
-.Petal2.p3 {transform: rotate(45deg);}
-.Petal2.p4 {transform: rotate(135deg);}
+.mid{animation: mid2 20s infinite;} 
+@keyframes mid2 {from{transform: rotate(0deg)}to{transform: rotate(180deg)}} 
+
+.Petal1.p1 {animation: p1rotation1 20s infinite;}
+.Petal1.p2 {animation: p1rotation2 20s infinite;}
+.Petal1.p3 {animation: p1rotation3 20s infinite;}
+.Petal1.p4 {animation: p1rotation4 20s infinite;}
+
+@keyframes p1rotation1 {from{transform: rotate(22.5deg)}to{transform: rotate(-157.5deg)}} 
+@keyframes p1rotation2 {from{transform: rotate(67.5deg)}to{transform: rotate(-112.5deg)}} 
+@keyframes p1rotation3 {from{transform: rotate(110.5deg)}to{transform: rotate(-69.5deg)}} 
+@keyframes p1rotation4 {from{transform: rotate(157.5deg)}to{transform: rotate(-23.5deg)}} 
+
+.Petal3.p1 {animation: p3rotation1 20s infinite;}
+.Petal3.p2 {animation: p3rotation2 20s infinite;}
+.Petal3.p3 {animation: p3rotation3 20s infinite;}
+.Petal3.p4 {animation: p3rotation4 20s infinite;}
+
+@keyframes p3rotation1 {from{transform: rotate(22.5deg)}to{transform: rotate(202.5deg)}} 
+@keyframes p3rotation2 {from{transform: rotate(67.5deg)}to{transform: rotate(247.5deg)}} 
+@keyframes p3rotation3 {from{transform: rotate(110.5deg)}to{transform: rotate(290.5deg)}} 
+@keyframes p3rotation4 {from{transform: rotate(157.5deg)}to{transform: rotate(337.5deg)}} 
+
+.Petal2.p1 {animation: p2rotation1 20s infinite;}
+.Petal2.p2 {animation: p2rotation2 20s infinite;}
+.Petal2.p3 {animation: p2rotation3 20s infinite;}
+.Petal2.p4 {animation: p2rotation4 20s infinite;}
+
+@keyframes p2rotation1 {from{transform: rotate(0deg)}to{transform: rotate(180deg)}} 
+@keyframes p2rotation2 {from{transform: rotate(90deg)}to{transform: rotate(270deg)}} 
+@keyframes p2rotation3 {from{transform: rotate(45deg)}to{transform: rotate(225deg)}} 
+@keyframes p2rotation4 {from{transform: rotate(135deg)}to{transform: rotate(315deg)}} 
+
+
+
+
+
