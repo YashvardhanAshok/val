@@ -1,22 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
 :root{
     --MidBackgroundColor:radial-gradient(circle, #000, #ff5e00, #000);
-    /* --MidBackgroundColor:radial-gradient(circle, #0000003e, #720455, #00000058); */
-    /* --MidBackgroundColor:radial-gradient(circle, #0000008c, #92091f, #0000008c); */
-    /**/
 
     --BackgroundColor1:radial-gradient(circle,#3C0753, #ff5e00, #ffbb00  );
-    /* --BackgroundColor1:radial-gradient(circle,#3C0753,#720455,#910A67 ); */
-    /* --BackgroundColor1:radial-gradient(circle,#3C0753,#ff07bd,#910A67 ); */
-    /* --BackgroundColor1:radial-gradient(circle,#070753,#910a15,#ff07bd ); */
     
     --sad0: drop-shadow(0 0 8px #682600);
     --sad1:drop-shadow(0 0 5px #35142c9e);
     --sad2: drop-shadow(0 0 2px #35142c);
-
-    /* --sad0: drop-shadow(0 0 8px #680055a9); */
-    /* --sad1:drop-shadow(0 0 5px #e05200); */
-    /* --sad2: drop-shadow(0 0 2px #910A67); */
 }
 
 
@@ -44,6 +34,10 @@ body{
     z-index: 1;
     overflow: hidden;
 }
+
+
+
+
 
 .calsstextconaner{
     transition: 1.5s ease-in-out;
@@ -87,7 +81,7 @@ body{
 
 .text6{width:90vw;font-size:35px;}
 
-.text7{font-size:35px;}
+.text7{font-size:32px;}
 
 .txt-rotate{
     text-shadow: rgba(255, 255, 255, 0) 0px 0px 4px;
@@ -96,52 +90,37 @@ body{
     animation: txt-rotate-line 1s linear infinite;
   }
 
-
-/* TEXT2 *//* TEXT2 *//* TEXT2 *//* TEXT2 *//* TEXT2 *//* TEXT2 */
-/* TEXT2 *//* TEXT2 *//* TEXT2 *//* TEXT2 *//* TEXT2 *//* TEXT2 */
-.IMG{
-    position: absolute;
-    left: -64vw;
-    bottom: -90px;
-
-    height: 100vw;
-    width: 220vw;
-    background-image: url("image-removebg-preview.png");
-    background-size: 100% 100%;
-    opacity: 0.7;
-}
-
-.contanerforoption{
-    display: flex;
-    flex-wrap:wrap;
-}
-
-.T2{
-    padding-left: 25px;
-    padding-top: 25px;
-    text-align: LEFT;
-    color: white;
-    font-size:40px;
-    order:1;
-}
-
-.yes,.no{
-    width: 110px;
-    margin-top: 10px;
-    margin-left: 40px;
-    padding: 5px;
-    background-color: white;
-    border-radius: 5px;
-    font-size:40px;
-    order:2;
-}
-
-.no{margin-left: 20px;}
-
-
 /* flower *//* flower *//* flower *//* flower *//* flower *//* flower */
 /* flower *//* flower *//* flower *//* flower *//* flower *//* flower */
 .fowerCover{position: absolute;transform: translate(-50%,-50%);left: 50%;top: 50%;}
+
+.fowerCoverLeftTop{
+    position: absolute;
+    left: -120px;
+    top: -120px;
+    transform: scale(1);
+}
+
+.fowerCoverRightTop{
+    position: absolute;
+    right: -120px;
+    top: -120px;
+    transform: scale(1);
+}
+
+.fowerCoverLeftBottom{
+    position: absolute;
+    left: -120px;
+    bottom: -120px;
+    transform: scale(1);
+}
+
+.fowerCoverRightBottom{
+    position: absolute;
+    right: -120px;
+    bottom: -120px;
+    transform: scale(1);
+}
 
 .flower {
     position: relative;
@@ -253,4 +232,82 @@ body{
 
 
 
+/* TEXT2 *//* TEXT2 *//* TEXT2 *//* TEXT2 *//* TEXT2 *//* TEXT2 */
+/* TEXT2 *//* TEXT2 *//* TEXT2 *//* TEXT2 *//* TEXT2 *//* TEXT2 */
+.IMG{
+    position: absolute;
+    transform: translate(-50%,0%);
+    /* left: 45%; */
+    left: 42.3%;
+    bottom: -100px;
 
+    height: 350px;
+    width: 820px;
+
+    height: 550px;
+    width: 1220px;
+    
+    background-image: url("image-removebg-preview.png");
+    background-size: 100% 100%;
+    opacity: 0.7;
+    transition: 1.5s ease-in-out;
+    filter: blur(10px)grayscale(100%);
+}
+
+.IMG.active{
+    height: 550px;
+    width: 1220px;
+    filter: blur(0)grayscale(0%);
+}
+
+.contanerforoption{
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.T2{
+    padding-top: 30px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-weight: 100;
+    font-size:47px;
+    order:1;
+}
+
+.yes,.no{
+    font-size: 30px;
+    width: 110px;
+    margin-top: 10px;
+    margin-left: 48px;
+    padding: 5px;
+    background-color: white;
+    border-radius: 5px;
+    order:2;
+    animation: yesno 2s infinite;
+}
+
+@keyframes yesno {
+    50%{
+    background-color: rgba(255, 255, 255, 0.87);
+    border-radius: 10px;
+
+    }
+}
+
+
+.no{margin-left: 20px;}
+
+
+.firework-particle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    animation: explode 0.5s ease-out;
+}
+
+@keyframes explode {
+    0% { transform: scale(1); opacity: 1; }
+    100% { transform: scale(8); opacity: 0; }
+}
