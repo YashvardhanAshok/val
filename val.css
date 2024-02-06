@@ -128,18 +128,19 @@ body{
 .flower {
     position: relative;
     margin: auto;
-    
-
     height: 200px;
     width: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 0;
-    animation: anima 2.5s ;
+    /* animation: anima 2.5s; */
     transform: scale(1.5);
+    opacity: 0;
+    transition: 2s ease-in-out;
 }
 
+.flower.active{opacity: 1;}
 
 @keyframes anima {
     0%{opacity: 0;}
