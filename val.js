@@ -1,6 +1,6 @@
 var text1 = document.getElementsByClassName("calsstextconaner");
 
-text1[0].style.transform = 'translateY(-1500px)'; 
+// text1[0].style.transform = 'translateY(-1500px)'; 
 $(document).ready(function(){
     var words = ["BEAUTY", "PASSION", "KINDNESS"];
     var index = 0;
@@ -12,21 +12,41 @@ $(document).ready(function(){
     }, 2500); 
   });
 
-
 var flower = document.getElementsByClassName("flower");
-// setTimeout(function() {text1[0].style.transform = 'translateY(-300px)';flower[0].style.opacity="1"; }, 8000);
+// 1 MANYA
+setTimeout(function() {text1[0].style.transform = 'translateY(-300px)';flower[0].style.opacity="1"; }, 4500);
+// 2 TUMHE PATA HAI, AAJ KYA HAI
+setTimeout(function() {text1[0].style.transform = 'translateY(-600px)';flower[4].style.opacity="1";flower[3].style.opacity="1";flower[2].style.opacity="1";flower[1].style.opacity="1"; }, 9000);
+// 3 TODAY, WE CELEBRATE U
+setTimeout(function() {text1[0].style.transform = 'translateY(-900px)'; }, 13000);
+// 4 YES U
+setTimeout(function() {text1[0].style.transform = 'translateY(-1200px)'; }, 18000);
+// 5 IT'S A DAY DEDICATED TO APPRECIATING
+setTimeout(function() {text1[0].style.transform = 'translateY(-1500px)'; }, 23000);
+// 6 AB MAIN TUMHARE BARE MEIN KYA HI BOLUN! 
+setTimeout(function() {text1[0].style.transform = 'translateY(-1800px)'; }, 30000);
+// 7 YOU'RE LIKE A FLOWER, UNIQUELY SWEET AND SPECIAL
+setTimeout(function() {text1[0].style.transform = 'translateY(-2100px)'; }, 38000);
+// 8 U MAKE AUTHOR FEEL SPECIAL
+setTimeout(function() {text1[0].style.transform = 'translateY(-2400px)'; }, 43000);
+// 9 TODAY IS YOUR DAY, THE MOST BEAUTIFUL FLOWER IN MY GARDEN
+setTimeout(function() {text1[0].style.transform = 'translateY(-2700px)'; }, 48000);
+// 10 HAPPY ROSE DAY🌹
+setTimeout(function() {text1[0].style.transform = 'translateY(-3000px)'; }, 53000);
 
-// setTimeout(function() {text1[0].style.transform = 'translateY(-600px)'; }, 12000);
+// ADIO 1
+document.addEventListener('DOMContentLoaded', function() {
+  var audioPlayer = document.getElementById('audioPlayer');
+  audioPlayer.addEventListener('loadedmetadata', function() {
+    audioPlayer.currentTime = 14; // Set audio to start at 14 sec 
+    setTimeout(function() {
+      audioPlayer.play();
+    }, 0);
+  });
+});
 
-// setTimeout(function() {text1[0].style.transform = 'translateY(-900px)'; }, 19000);
 
-// setTimeout(function() {text1[0].style.transform = 'translateY(-1200px)'; }, 25000);
 
-// setTimeout(function() {text1[0].style.transform = 'translateY(-1500px)'; }, 32000);
-
-// setTimeout(function() {text1[0].style.transform = 'translateY(-1800px)'; }, 40000);
-
-// setTimeout(function() {text1[0].style.transform = 'translateY(-2100px)'; }, 46000);
 
 // var fowerCover = document.getElementsByClassName("fowerCover");
 // var phase2 = document.querySelector('.phase2');
@@ -103,12 +123,3 @@ var flower = document.getElementsByClassName("flower");
 // });
 
 // mus
-document.addEventListener('DOMContentLoaded', function() {
-  var audioPlayer = document.getElementById('audioPlayer');
-  audioPlayer.addEventListener('loadedmetadata', function() {
-    audioPlayer.currentTime = 119; // Set audio to start at 2 minutes (120 seconds)
-    setTimeout(function() {
-      audioPlayer.play();
-    }, 0);
-  });
-});
