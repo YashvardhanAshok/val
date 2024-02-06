@@ -31,7 +31,7 @@ setTimeout(function() {text1[0].style.transform = 'translateY(-2100px)'; }, 3800
 setTimeout(function() {text1[0].style.transform = 'translateY(-2400px)'; }, 43000);
 // 9 TODAY IS YOUR DAY, THE MOST BEAUTIFUL FLOWER IN MY GARDEN
 setTimeout(function() {text1[0].style.transform = 'translateY(-2700px)'; }, 48000);
-// 10 HAPPY ROSE DAY🌹
+// 10 HAPPY ROSE DAY
 setTimeout(function() {text1[0].style.transform = 'translateY(-3000px)'; }, 53000);
 
 // ADIO 1
