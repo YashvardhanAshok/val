@@ -39,9 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var audioPlayer = document.getElementById('audioPlayer');
   audioPlayer.addEventListener('loadedmetadata', function() {
     audioPlayer.currentTime = 14; // Set audio to start at 14 sec 
-    setTimeout(function() {
-      audioPlayer.play();
-    }, 0);
+
   });
 });
 
