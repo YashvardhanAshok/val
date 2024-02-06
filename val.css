@@ -26,6 +26,9 @@ body{
 
 /* TEXT1 *//* TEXT1 *//* TEXT1 *//* TEXT1 *//* TEXT1 *//* TEXT1 */
 /* TEXT1 *//* TEXT1 *//* TEXT1 *//* TEXT1 *//* TEXT1 *//* TEXT1 */
+.phase1{opacity: 1;transition: 1.5s ease-in-out;}
+.phase1.DISPLY{opacity: 0;}
+
 .mainTixt1{
     position: absolute; 
     transform: translate(-50%,-50%);left:50%;
@@ -234,52 +237,63 @@ body{
 
 /* TEXT2 *//* TEXT2 *//* TEXT2 *//* TEXT2 *//* TEXT2 *//* TEXT2 */
 /* TEXT2 *//* TEXT2 *//* TEXT2 *//* TEXT2 *//* TEXT2 *//* TEXT2 */
+.phase2{opacity: 0;transition: 1.5s ease-in-out;}
+.phase2.DISPLY{opacity: 1;}
+
 .IMG{
     position: absolute;
     transform: translate(-50%,0%);
-    /* left: 45%; */
-    left: 42.3%;
+    left: 45%;
+    /* left: 42.3%; */
     bottom: -100px;
 
-    height: 350px;
+    height: 400px;
     width: 820px;
 
-    height: 550px;
-    width: 1220px;
+    /* height: 550px;
+    width: 1220px; */
     
     background-image: url("image-removebg-preview.png");
     background-size: 100% 100%;
     opacity: 0.7;
     transition: 1.5s ease-in-out;
     filter: blur(10px)grayscale(100%);
+    z-index: -1;
 }
 
 .IMG.active{
     height: 550px;
     width: 1220px;
-    filter: blur(0)grayscale(0%);
+    filter: blur(0)grayscale(10%)brightness(0.9)contrast(1.2);
 }
 
-.contanerforoption{
+.yesnocontaner{
     display: flex;
     flex-wrap:wrap;
+    position: relative;
+    justify-content:space-between;
 }
 
 .T2{
-    padding-top: 30px;
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 5px;
     width: 100%;
+
     text-align: center;
     color: white;
     font-weight: 100;
     font-size:47px;
     order:1;
+    z-index: 2;
 }
 
 .yes,.no{
+    margin: auto;
+
     font-size: 30px;
     width: 110px;
     margin-top: 10px;
-    margin-left: 48px;
     padding: 5px;
     background-color: white;
     border-radius: 5px;
@@ -287,11 +301,12 @@ body{
     animation: yesno 2s infinite;
 }
 
+.text8.active,.yes.active,.no.active{opacity: 0;transition: 0.8s ease-in-out;}
+
 @keyframes yesno {
     50%{
     background-color: rgba(255, 255, 255, 0.87);
     border-radius: 10px;
-
     }
 }
 

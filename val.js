@@ -1,23 +1,6 @@
 var text1 = document.getElementsByClassName("calsstextconaner");
-// var no = -300; // Initial position
-
-
-
-
-
 
 // text1[0].style.transform = 'translateY(-1200px)'; 
-
-
-
-
-
-
-
-
-
-
-
 $(document).ready(function(){
     var words = ["🦋BEAUTY🦋", "PASSION", "SMARTNESS"];
     var index = 0;
@@ -28,7 +11,6 @@ $(document).ready(function(){
       });
     }, 2500); 
   });
-
 
 
 
@@ -43,6 +25,16 @@ setTimeout(function() {text1[0].style.transform = 'translateY(-1200px)'; }, 2500
 setTimeout(function() {text1[0].style.transform = 'translateY(-1500px)'; }, 32000);
 
 setTimeout(function() {text1[0].style.transform = 'translateY(-1800px)'; }, 40000);
+
+setTimeout(function() {text1[0].style.transform = 'translateY(-2100px)'; }, 46000);
+
+var fowerCover = document.getElementsByClassName("fowerCover");
+var phase2 = document.querySelector('.phase2');
+var phase1 = document.querySelector('.phase1');
+
+ 
+// setTimeout(function() {phase1.classList.add('DISPLY');phase2.classList.add('DISPLY');}, 50000);
+// phase1.classList.add('DISPLY');phase2.classList.add('DISPLY');
 
 // no
 document.addEventListener("DOMContentLoaded", function() {
@@ -61,7 +53,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // yes
 
-const IMG = document.querySelector('.IMG');
 
 document.addEventListener("DOMContentLoaded", function() {
   var colors = ['#ff0000', '#00ff00', '#0000ff', '#ffff00', '#ff00ff']; // Different colors for fireworks
@@ -74,9 +65,16 @@ document.addEventListener("DOMContentLoaded", function() {
       }
   });
 
-
   function createFirework() {
-      IMG.classList.add('active');
+    var IMG = document.querySelector('.IMG');
+    var text8 = document.querySelector('.text8');
+    var yes = document.querySelector('.yes');
+    var no = document.querySelector('.no');
+    
+    text8.classList.add('active');
+    yes.classList.add('active');
+    no.classList.add('active');
+    IMG.classList.add('active');
 
       var numParticles = 20; // Number of particles in one firework
 
@@ -102,4 +100,13 @@ document.addEventListener("DOMContentLoaded", function() {
       IMG.classList.add('active');
 
   }
+});
+
+// mus
+document.addEventListener('DOMContentLoaded', function() {
+  var audioPlayer = document.getElementById('audioPlayer');
+  audioPlayer.addEventListener('loadedmetadata', function() {
+    audioPlayer.currentTime = 120; // Set audio to start at 2 minutes (120 seconds)
+    audioPlayer.play();
+  });
 });
