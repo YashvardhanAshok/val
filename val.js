@@ -12,37 +12,68 @@ $(document).ready(function(){
     }, 2500); 
   });
 
-var flower = document.getElementsByClassName("flower");
-// 1 MANYA
-setTimeout(function() {text1[0].style.transform = 'translateY(-300px)';flower[0].style.opacity="1"; }, 4500);
-// 2 TUMHE PATA HAI, AAJ KYA HAI
-setTimeout(function() {text1[0].style.transform = 'translateY(-600px)';flower[4].style.opacity="1";flower[3].style.opacity="1";flower[2].style.opacity="1";flower[1].style.opacity="1"; }, 9000);
-// 3 TODAY, WE CELEBRATE U
-setTimeout(function() {text1[0].style.transform = 'translateY(-900px)'; }, 13000);
-// 4 YES U
-setTimeout(function() {text1[0].style.transform = 'translateY(-1200px)'; }, 18000);
-// 5 IT'S A DAY DEDICATED TO APPRECIATING
-setTimeout(function() {text1[0].style.transform = 'translateY(-1500px)'; }, 23000);
-// 6 AB MAIN TUMHARE BARE MEIN KYA HI BOLUN! 
-setTimeout(function() {text1[0].style.transform = 'translateY(-1800px)'; }, 30000);
-// 7 YOU'RE LIKE A FLOWER, UNIQUELY SWEET AND SPECIAL
-setTimeout(function() {text1[0].style.transform = 'translateY(-2100px)'; }, 38000);
-// 8 U MAKE AUTHOR FEEL SPECIAL
-setTimeout(function() {text1[0].style.transform = 'translateY(-2400px)'; }, 43000);
-// 9 TODAY IS YOUR DAY, THE MOST BEAUTIFUL FLOWER IN MY GARDEN
-setTimeout(function() {text1[0].style.transform = 'translateY(-2700px)'; }, 48000);
-// 10 HAPPY ROSE DAY
-setTimeout(function() {text1[0].style.transform = 'translateY(-3000px)'; }, 53000);
 
 // ADIO 1
 document.addEventListener('DOMContentLoaded', function() {
   var audioPlayer = document.getElementById('audioPlayer');
-  audioPlayer.addEventListener('loadedmetadata', function() {
+  var playButton = document.getElementById('playButton');
+  
+  playButton.addEventListener('click', function() {
     audioPlayer.currentTime = 14; // Set audio to start at 14 sec 
+    audioPlayer.play();
+
+    var mainTixt1 = document.querySelector('.mainTixt1');
+    var playButton = document.querySelector('#playButton');
+
+    playButton.classList.add('active');
+    mainTixt1.classList.add('active');
+
+    var flower = document.getElementsByClassName("flower");
+    // 1 MANYA
+    setTimeout(function() {text1[0].style.transform = 'translateY(-300px)';flower[0].style.opacity="1"; }, 4500);
+    // 2 TUMHE PATA HAI, AAJ KYA HAI
+    setTimeout(function() {text1[0].style.transform = 'translateY(-600px)';flower[4].style.opacity="1";flower[3].style.opacity="1";flower[2].style.opacity="1";flower[1].style.opacity="1"; }, 9000);
+    // 3 TODAY, WE CELEBRATE U
+    setTimeout(function() {text1[0].style.transform = 'translateY(-900px)'; }, 13000);
+    // 4 YES U
+    setTimeout(function() {text1[0].style.transform = 'translateY(-1200px)'; }, 18000);
+    // 5 IT'S A DAY DEDICATED TO APPRECIATING
+    setTimeout(function() {text1[0].style.transform = 'translateY(-1500px)'; }, 23000);
+    // 6 AB MAIN TUMHARE BARE MEIN KYA HI BOLUN! 
+    setTimeout(function() {text1[0].style.transform = 'translateY(-1800px)'; }, 30000);
+    // 7 YOU'RE LIKE A FLOWER, UNIQUELY SWEET AND SPECIAL
+    setTimeout(function() {text1[0].style.transform = 'translateY(-2100px)'; }, 38000);
+    // 8 U MAKE AUTHOR FEEL SPECIAL
+    setTimeout(function() {text1[0].style.transform = 'translateY(-2400px)'; }, 43000);
+    // 9 TODAY IS YOUR DAY, THE MOST BEAUTIFUL FLOWER IN MY GARDEN
+    setTimeout(function() {text1[0].style.transform = 'translateY(-2700px)'; }, 48000);
+    // 10 HAPPY ROSE DAY
+    setTimeout(function() {text1[0].style.transform = 'translateY(-3000px)'; }, 53000);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   });
 });
-
 
 
 
