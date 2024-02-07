@@ -353,6 +353,6 @@ body{
 }
 
 
-#playButton.active{opacity: 0;transition: 0.2s ease-in-out;display: none;}
+#playButton.active{transition: 0.2s ease-in-out;display: none;}
 .mainTixt1{opacity: 0;}
 .mainTixt1.active{opacity: 1;transition: 1.2s ease-in-out;}

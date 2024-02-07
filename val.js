@@ -17,8 +17,8 @@ $(document).ready(function(){
 document.addEventListener('DOMContentLoaded', function() {
   var audioPlayer = document.getElementById('audioPlayer');
   var playButton = document.getElementById('playButton');
-  
-  playButton.addEventListener('click', function() {
+
+  function playAudio() {
     audioPlayer.currentTime = 14; // Set audio to start at 14 sec 
     audioPlayer.play();
 
@@ -50,30 +50,13 @@ document.addEventListener('DOMContentLoaded', function() {
     // 10 HAPPY ROSE DAY
     setTimeout(function() {text1[0].style.transform = 'translateY(-3000px)'; }, 53000);
 
+    // Remove event listener after it's been triggered
+    playButton.removeEventListener('click', playAudio);
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  });
+  playButton.addEventListener('click', playAudio);
 });
+
 
 
 
