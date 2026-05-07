@@ -1,358 +1,523 @@
-@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
-:root{
-    --MidBackgroundColor:radial-gradient(circle, #000, #ff5e00, #000);
+@import url("https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap");
+:root {
+  --MidBackgroundColor: radial-gradient(circle, #000, #ff5e00, #000);
 
-    --BackgroundColor1:radial-gradient(circle,#3C0753, #ff5e00, #ffbb00  );
-    
-    --sad0: drop-shadow(0 0 8px #682600);
-    --sad1:drop-shadow(0 0 5px #35142c9e);
-    --sad2: drop-shadow(0 0 2px #35142c);
+  --BackgroundColor1: radial-gradient(circle, #3c0753, #ff5e00, #ffbb00);
+
+  --sad0: drop-shadow(0 0 8px #682600);
+  --sad1: drop-shadow(0 0 5px #35142c9e);
+  --sad2: drop-shadow(0 0 2px #35142c);
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+  height: 100dvh;
+  background-color: #18080b;
 
-
-body{
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    overflow: hidden;
-    background-color: #18080b;
-
-    font-family: "Protest Riot", sans-serif;
-    font-weight: bold;
-    line-height: 1;
-    text-align: center;
-    
+  font-family: "Protest Riot", sans-serif;
+  font-weight: bold;
+  line-height: 1;
+  text-align: center;
 }
 
-/* TEXT1 *//* TEXT1 *//* TEXT1 *//* TEXT1 *//* TEXT1 *//* TEXT1 */
-/* TEXT1 *//* TEXT1 *//* TEXT1 *//* TEXT1 *//* TEXT1 *//* TEXT1 */
-.phase1{opacity: 1;transition: 1.5s ease-in-out;}
-.phase1.DISPLY{opacity: 0;}
-
-.mainTixt1{
-    position: absolute; 
-    transform: translate(-50%,-50%);left:50%;
-    top: 50%;
-    max-height: 300px;
-    z-index: 1;
-    overflow: hidden;
+/* TEXT1 */ /* TEXT1 */ /* TEXT1 */ /* TEXT1 */ /* TEXT1 */ /* TEXT1 */
+/* TEXT1 */ /* TEXT1 */ /* TEXT1 */ /* TEXT1 */ /* TEXT1 */ /* TEXT1 */
+.phase1 {
+  opacity: 1;
+  transition: 1.5s ease-in-out;
+}
+.phase1.DISPLY {
+  opacity: 0;
 }
 
-
-
-
-
-.calsstextconaner{
-    transition: 1.5s ease-in-out;
+.mainTixt1 {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  max-height: 300px;
+  z-index: 1;
+  overflow: hidden;
 }
 
-.T{
-    position: relative;
-    height: 300px;
-
-       
-    color: rgb(255, 255, 255);
-    animation: textShadow 3s infinite;
-    width: 100%;
-    transition: 1s ease-in-out;
+.calsstextconaner {
+  transition: 1.5s ease-in-out;
 }
 
+.T {
+  position: relative;
+  height: 300px;
 
+  color: rgb(255, 255, 255);
+  animation: textShadow 3s infinite;
+  width: 100%;
+  transition: 1s ease-in-out;
+}
 
-
-.cetertext{
-    position: absolute; 
-    transform: translate(-50%,-50%);left:50%;
-    top: 50%;
-    width: 100%;
+.cetertext {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  width: 100%;
 }
 
 @keyframes textShadow {
- 0%{text-shadow: rgba(255, 255, 255, 0.244) 0px 0px 4px;}
- 50%{text-shadow: rgba(255, 255, 255, 0) 0px 0px 4px;}
- 100%{text-shadow: rgba(255, 255, 255, 0.244) 0px 0px 4px;}   
-}
-.text1{font-size:47px;}
-
-.text2{font-size:80px;}
-
-.text3{font-size:40px;}
-
-.text4{font-size:40px;}
-
-.text5{font-size:47px;}
-
-.text6{width:90vw;font-size:35px;}
-
-.text7{font-size:32px;}
-
-.txt-rotate{
-    text-shadow: rgba(255, 255, 255, 0) 0px 0px 4px;
-
-    border-right: 4px solid transparent;
-    animation: txt-rotate-line 1s linear infinite;
+  0% {
+    text-shadow: rgba(255, 255, 255, 0.244) 0px 0px 4px;
   }
-
-/* flower *//* flower *//* flower *//* flower *//* flower *//* flower */
-/* flower *//* flower *//* flower *//* flower *//* flower *//* flower */
-.fowerCover{position: absolute;transform: translate(-50%,-50%);left: 50%;top: 50%;}
-
-.fowerCoverLeftTop{
-    position: absolute;
-    left: -120px;
-    top: -120px;
-    transform: scale(1);
+  50% {
+    text-shadow: rgba(255, 255, 255, 0) 0px 0px 4px;
+  }
+  100% {
+    text-shadow: rgba(255, 255, 255, 0.244) 0px 0px 4px;
+  }
+}
+.text1 {
+  font-size: 47px;
 }
 
-.fowerCoverRightTop{
-    position: absolute;
-    right: -120px;
-    top: -120px;
-    transform: scale(1);
+.text2 {
+  font-size: 80px;
 }
 
-.fowerCoverLeftBottom{
-    position: absolute;
-    left: -120px;
-    bottom: -120px;
-    transform: scale(1);
+.text3 {
+  font-size: 40px;
 }
 
-.fowerCoverRightBottom{
-    position: absolute;
-    right: -120px;
-    bottom: -120px;
-    transform: scale(1);
+.text4 {
+  font-size: 40px;
+}
+
+.text5 {
+  font-size: 47px;
+}
+
+.text6 {
+  width: 90vw;
+  font-size: 35px;
+}
+
+.text7 {
+  font-size: 32px;
+}
+
+.txt-rotate {
+  text-shadow: rgba(255, 255, 255, 0) 0px 0px 4px;
+
+  border-right: 4px solid transparent;
+  animation: txt-rotate-line 1s linear infinite;
+}
+
+/* flower */ /* flower */ /* flower */ /* flower */ /* flower */ /* flower */
+/* flower */ /* flower */ /* flower */ /* flower */ /* flower */ /* flower */
+.fowerCover {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+}
+
+.fowerCoverLeftTop {
+  position: absolute;
+  left: -120px;
+  top: -120px;
+  transform: scale(1);
+}
+
+.fowerCoverRightTop {
+  position: absolute;
+  right: -120px;
+  top: -120px;
+  transform: scale(1);
+}
+
+.fowerCoverLeftBottom {
+  position: absolute;
+  left: -120px;
+  bottom: -120px;
+  transform: scale(1);
+}
+
+.fowerCoverRightBottom {
+  position: absolute;
+  right: -120px;
+  bottom: -120px;
+  transform: scale(1);
 }
 
 .flower {
-    position: relative;
-    margin: auto;
-    height: 200px;
-    width: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 0;
-    /* animation: anima 2.5s; */
-    transform: scale(1.5);
-    opacity: 0;
-    transition: 2s ease-in-out;
+  position: relative;
+  margin: auto;
+  height: 200px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+  /* animation: anima 2.5s; */
+  transform: scale(1.5);
+  opacity: 0;
+  transition: 2s ease-in-out;
 }
 
-.flower.active{opacity: 1;}
+.flower.active {
+  opacity: 1;
+}
 
 @keyframes anima {
-    0%{opacity: 0;}
-    30%{opacity: 0;}
-    100%{opacity: 1;}
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .mid {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 
-    background: var(--MidBackgroundColor);
-    background-size: 5px 5px;
-    filter: var(--sad0);
-    z-index: 4;
+  background: var(--MidBackgroundColor);
+  background-size: 5px 5px;
+  filter: var(--sad0);
+  z-index: 4;
 }
 
 .Petal1 {
-    position: absolute;
-    left: 40px;
-    z-index: 3;
+  position: absolute;
+  left: 40px;
+  z-index: 3;
 
-    width: 120px;
-    height: 30px;
-    border-radius: 50%;
+  width: 120px;
+  height: 30px;
+  border-radius: 50%;
 
-    background: var(--BackgroundColor1);
-    filter: var(--sad1);
+  background: var(--BackgroundColor1);
+  filter: var(--sad1);
 }
 
 .Petal2 {
-    position: absolute;
+  position: absolute;
 
-    width: 200px;
-    height: 40px;
-    border-radius: 50%;
+  width: 200px;
+  height: 40px;
+  border-radius: 50%;
 
-    background: var(--BackgroundColor1);
-    filter: var(--sad1);
-    z-index: 2;
+  background: var(--BackgroundColor1);
+  filter: var(--sad1);
+  z-index: 2;
 }
-
-
 
 .Petal3 {
-    position: absolute;
-    left: 0px;
+  position: absolute;
+  left: 0px;
 
-    width: 200px;
-    height: 40px;
-    border-radius: 50%;
+  width: 200px;
+  height: 40px;
+  border-radius: 50%;
 
-    background: var(--BackgroundColor1);
-    filter: var(--sad2);
-
+  background: var(--BackgroundColor1);
+  filter: var(--sad2);
 }
 
+.mid {
+  animation: mid2 20s infinite;
+}
+@keyframes mid2 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
 
-.mid{animation: mid2 20s infinite;} 
-@keyframes mid2 {from{transform: rotate(0deg)}to{transform: rotate(180deg)}} 
+.Petal1.p1 {
+  animation: p1rotation1 20s infinite;
+}
+.Petal1.p2 {
+  animation: p1rotation2 20s infinite;
+}
+.Petal1.p3 {
+  animation: p1rotation3 20s infinite;
+}
+.Petal1.p4 {
+  animation: p1rotation4 20s infinite;
+}
 
-.Petal1.p1 {animation: p1rotation1 20s infinite;}
-.Petal1.p2 {animation: p1rotation2 20s infinite;}
-.Petal1.p3 {animation: p1rotation3 20s infinite;}
-.Petal1.p4 {animation: p1rotation4 20s infinite;}
+@keyframes p1rotation1 {
+  from {
+    transform: rotate(22.5deg);
+  }
+  to {
+    transform: rotate(-157.5deg);
+  }
+}
+@keyframes p1rotation2 {
+  from {
+    transform: rotate(67.5deg);
+  }
+  to {
+    transform: rotate(-112.5deg);
+  }
+}
+@keyframes p1rotation3 {
+  from {
+    transform: rotate(110.5deg);
+  }
+  to {
+    transform: rotate(-69.5deg);
+  }
+}
+@keyframes p1rotation4 {
+  from {
+    transform: rotate(157.5deg);
+  }
+  to {
+    transform: rotate(-23.5deg);
+  }
+}
 
-@keyframes p1rotation1 {from{transform: rotate(22.5deg)}to{transform: rotate(-157.5deg)}} 
-@keyframes p1rotation2 {from{transform: rotate(67.5deg)}to{transform: rotate(-112.5deg)}} 
-@keyframes p1rotation3 {from{transform: rotate(110.5deg)}to{transform: rotate(-69.5deg)}} 
-@keyframes p1rotation4 {from{transform: rotate(157.5deg)}to{transform: rotate(-23.5deg)}} 
+.Petal3.p1 {
+  animation: p3rotation1 20s infinite;
+}
+.Petal3.p2 {
+  animation: p3rotation2 20s infinite;
+}
+.Petal3.p3 {
+  animation: p3rotation3 20s infinite;
+}
+.Petal3.p4 {
+  animation: p3rotation4 20s infinite;
+}
 
-.Petal3.p1 {animation: p3rotation1 20s infinite;}
-.Petal3.p2 {animation: p3rotation2 20s infinite;}
-.Petal3.p3 {animation: p3rotation3 20s infinite;}
-.Petal3.p4 {animation: p3rotation4 20s infinite;}
+@keyframes p3rotation1 {
+  from {
+    transform: rotate(22.5deg);
+  }
+  to {
+    transform: rotate(202.5deg);
+  }
+}
+@keyframes p3rotation2 {
+  from {
+    transform: rotate(67.5deg);
+  }
+  to {
+    transform: rotate(247.5deg);
+  }
+}
+@keyframes p3rotation3 {
+  from {
+    transform: rotate(110.5deg);
+  }
+  to {
+    transform: rotate(290.5deg);
+  }
+}
+@keyframes p3rotation4 {
+  from {
+    transform: rotate(157.5deg);
+  }
+  to {
+    transform: rotate(337.5deg);
+  }
+}
 
-@keyframes p3rotation1 {from{transform: rotate(22.5deg)}to{transform: rotate(202.5deg)}} 
-@keyframes p3rotation2 {from{transform: rotate(67.5deg)}to{transform: rotate(247.5deg)}} 
-@keyframes p3rotation3 {from{transform: rotate(110.5deg)}to{transform: rotate(290.5deg)}} 
-@keyframes p3rotation4 {from{transform: rotate(157.5deg)}to{transform: rotate(337.5deg)}} 
+.Petal2.p1 {
+  animation: p2rotation1 20s infinite;
+}
+.Petal2.p2 {
+  animation: p2rotation2 20s infinite;
+}
+.Petal2.p3 {
+  animation: p2rotation3 20s infinite;
+}
+.Petal2.p4 {
+  animation: p2rotation4 20s infinite;
+}
 
-.Petal2.p1 {animation: p2rotation1 20s infinite;}
-.Petal2.p2 {animation: p2rotation2 20s infinite;}
-.Petal2.p3 {animation: p2rotation3 20s infinite;}
-.Petal2.p4 {animation: p2rotation4 20s infinite;}
+@keyframes p2rotation1 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+@keyframes p2rotation2 {
+  from {
+    transform: rotate(90deg);
+  }
+  to {
+    transform: rotate(270deg);
+  }
+}
+@keyframes p2rotation3 {
+  from {
+    transform: rotate(45deg);
+  }
+  to {
+    transform: rotate(225deg);
+  }
+}
+@keyframes p2rotation4 {
+  from {
+    transform: rotate(135deg);
+  }
+  to {
+    transform: rotate(315deg);
+  }
+}
 
-@keyframes p2rotation1 {from{transform: rotate(0deg)}to{transform: rotate(180deg)}} 
-@keyframes p2rotation2 {from{transform: rotate(90deg)}to{transform: rotate(270deg)}} 
-@keyframes p2rotation3 {from{transform: rotate(45deg)}to{transform: rotate(225deg)}} 
-@keyframes p2rotation4 {from{transform: rotate(135deg)}to{transform: rotate(315deg)}} 
+/* TEXT2 */ /* TEXT2 */ /* TEXT2 */ /* TEXT2 */ /* TEXT2 */ /* TEXT2 */
+/* TEXT2 */ /* TEXT2 */ /* TEXT2 */ /* TEXT2 */ /* TEXT2 */ /* TEXT2 */
+.phase2 {
+  opacity: 0;
+  transition: 1.5s ease-in-out;
+}
+.phase2.DISPLY {
+  opacity: 1;
+}
 
+.IMG {
+  position: absolute;
+  transform: translate(-50%, 0%);
+  left: 45%;
+  /* left: 42.3%; */
+  bottom: -100px;
 
+  height: 400px;
+  width: 820px;
 
-
-/* TEXT2 *//* TEXT2 *//* TEXT2 *//* TEXT2 *//* TEXT2 *//* TEXT2 */
-/* TEXT2 *//* TEXT2 *//* TEXT2 *//* TEXT2 *//* TEXT2 *//* TEXT2 */
-.phase2{opacity: 0;transition: 1.5s ease-in-out;}
-.phase2.DISPLY{opacity: 1;}
-
-.IMG{
-    position: absolute;
-    transform: translate(-50%,0%);
-    left: 45%;
-    /* left: 42.3%; */
-    bottom: -100px;
-
-    height: 400px;
-    width: 820px;
-
-    /* height: 550px;
+  /* height: 550px;
     width: 1220px; */
-    
-    background-image: url("image-removebg-preview.png");
-    background-size: 100% 100%;
-    opacity: 0.7;
-    transition: 1.5s ease-in-out;
-    filter: blur(10px)grayscale(100%);
-    z-index: -1;
+
+  background-image: url("image-removebg-preview.png");
+  background-size: 100% 100%;
+  opacity: 0.7;
+  transition: 1.5s ease-in-out;
+  filter: blur(10px) grayscale(100%);
+  z-index: -1;
 }
 
-.IMG.active{
-    height: 550px;
-    width: 1220px;
-    filter: blur(0)grayscale(10%)brightness(0.9)contrast(1.2);
+.IMG.active {
+  height: 550px;
+  width: 1220px;
+  filter: blur(0) grayscale(10%) brightness(0.9) contrast(1.2);
 }
 
-.yesnocontaner{
-    display: flex;
-    flex-wrap:wrap;
-    position: relative;
-    justify-content:space-between;
+.yesnocontaner {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: space-between;
 }
 
-.T2{
-    position: relative;
-    padding-top: 20px;
-    padding-bottom: 5px;
-    width: 100%;
+.T2 {
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  width: 100%;
 
-    text-align: center;
-    color: white;
-    font-weight: 100;
-    font-size:47px;
-    order:1;
-    z-index: 2;
+  text-align: center;
+  color: white;
+  font-weight: 100;
+  font-size: 47px;
+  order: 1;
+  z-index: 2;
 }
 
-.yes,.no{
-    margin: auto;
+.yes,
+.no {
+  margin: auto;
 
-    font-size: 30px;
-    width: 110px;
-    margin-top: 10px;
-    padding: 5px;
-    background-color: white;
-    border-radius: 5px;
-    order:2;
-    animation: yesno 2s infinite;
+  font-size: 30px;
+  width: 110px;
+  margin-top: 10px;
+  padding: 5px;
+  background-color: white;
+  border-radius: 5px;
+  order: 2;
+  animation: yesno 2s infinite;
 }
 
-.text8.active,.yes.active,.no.active{opacity: 0;transition: 0.8s ease-in-out;}
+.text8.active,
+.yes.active,
+.no.active {
+  opacity: 0;
+  transition: 0.8s ease-in-out;
+}
 
 @keyframes yesno {
-    50%{
+  50% {
     background-color: rgba(255, 255, 255, 0.87);
     border-radius: 10px;
-    }
+  }
 }
 
-
-.no{margin-left: 20px;}
-
+.no {
+  margin-left: 20px;
+}
 
 .firework-particle {
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    animation: explode 0.5s ease-out;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  animation: explode 0.5s ease-out;
 }
 
 @keyframes explode {
-    0% { transform: scale(1); opacity: 1; }
-    100% { transform: scale(8); opacity: 0; }
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(8);
+    opacity: 0;
+  }
 }
 
-
-#playButton{
-    position: absolute;
-    transform: translate(-50%,-50%);
-    top: 50%;
-    left: 50%;
-    width: 200px;
-    width: 200px;
-    color: rgb(0, 0, 0);
-    font-size: 40px;
-    z-index: 10;
-    background-color: rgb(255, 255, 255);
-    padding: 90px 50px;
-    border-radius: 50%;
-    box-shadow: white 0 0 10px;
-    animation: sad123 5s infinite;
-}   
+#playButton {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  width: 200px;
+  color: rgb(0, 0, 0);
+  font-size: 40px;
+  z-index: 10;
+  background-color: rgb(255, 255, 255);
+  padding: 90px 50px;
+  border-radius: 50%;
+  box-shadow: white 0 0 10px;
+  animation: sad123 5s infinite;
+}
 
 @keyframes sad123 {
-    
-    50%{box-shadow: white 0 0 40px;}
+  50% {
+    box-shadow: white 0 0 40px;
+  }
 }
 
-
-#playButton.active{transition: 0.2s ease-in-out;display: none;}
-.mainTixt1{opacity: 0;}
-.mainTixt1.active{opacity: 1;transition: 1.2s ease-in-out;}
+#playButton.active {
+  transition: 0.2s ease-in-out;
+  display: none;
+}
+.mainTixt1 {
+  opacity: 0;
+}
+.mainTixt1.active {
+  opacity: 1;
+  transition: 1.2s ease-in-out;
+}
