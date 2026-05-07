@@ -15,6 +15,9 @@ body {
   height: 100vh;
   overflow: hidden;
   height: 100dvh;
+  max-height: 100dvh;
+  max-width: 100dvw;
+  width: 100vw;
   background-color: #18080b;
 
   font-family: "Protest Riot", sans-serif;
